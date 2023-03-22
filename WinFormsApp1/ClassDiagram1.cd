@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WinFormsApp1.Calculator">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="Add" Hidden="true" />
+      <Field Name="b" Hidden="true" />
+      <Field Name="Backspace" Hidden="true" />
+      <Field Name="button11" Hidden="true" />
+      <Field Name="ChangeSign" Hidden="true" />
+      <Field Name="Clear" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="Cos" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="Division" Hidden="true" />
+      <Field Name="Equal" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="MaxValue" Hidden="true" />
+      <Field Name="Minus" Hidden="true" />
+      <Field Name="MinValue" Hidden="true" />
+      <Field Name="Mult" Hidden="true" />
+      <Field Name="OneDivX" Hidden="true" />
+      <Field Name="Press1" Hidden="true" />
+      <Field Name="Press2" Hidden="true" />
+      <Field Name="Press3" Hidden="true" />
+      <Field Name="Press4" Hidden="true" />
+      <Field Name="Press5" Hidden="true" />
+      <Field Name="Press6" Hidden="true" />
+      <Field Name="Press7" Hidden="true" />
+      <Field Name="Press8" Hidden="true" />
+      <Field Name="Press9" Hidden="true" />
+      <Field Name="Sin" Hidden="true" />
+      <Field Name="Square" Hidden="true" />
+      <Field Name="SubmitValue" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="ToDouble" Hidden="true" />
+      <Field Name="xPoweraHalf" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAKIAAoAACAAIBgBkAKEElsTAFEAAgAgUxSoAADAIAg=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinFormsApp1.Program">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
