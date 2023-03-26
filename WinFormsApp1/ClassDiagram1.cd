@@ -4,9 +4,9 @@
     <Position X="4" Y="0.5" Width="1.5" />
     <Members>
       <Field Name="Add" Hidden="true" />
-      <Field Name="b" Hidden="true" />
       <Field Name="Backspace" Hidden="true" />
       <Field Name="button11" Hidden="true" />
+      <Method Name="Calculator" Hidden="true" />
       <Field Name="ChangeSign" Hidden="true" />
       <Field Name="Clear" Hidden="true" />
       <Field Name="components" Hidden="true" />
@@ -14,6 +14,7 @@
       <Method Name="Dispose" Hidden="true" />
       <Field Name="Division" Hidden="true" />
       <Field Name="Equal" Hidden="true" />
+      <Method Name="Form1_Load" Hidden="true" />
       <Method Name="InitializeComponent" Hidden="true" />
       <Field Name="label1" Hidden="true" />
       <Field Name="label2" Hidden="true" />
@@ -39,7 +40,7 @@
       <Field Name="xPoweraHalf" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAKIAAoAACAAIBgBkAKEElsTAFEAAgAgUxSoAADAIAg=</HashCode>
+      <HashCode>AAKIAAoAAGAAIBgBkAKEElsTAFEAAgAgUxSoAADEIAg=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>

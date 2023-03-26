@@ -419,6 +419,7 @@
             MinValue.Size = new Size(85, 23);
             MinValue.TabIndex = 26;
             MinValue.TextAlign = HorizontalAlignment.Right;
+            MinValue.TextChanged += MinValue_TextChanged;
             MinValue.KeyPress += MinValue_KeyPress;
             // 
             // label1

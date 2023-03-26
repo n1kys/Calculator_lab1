@@ -26,7 +26,6 @@ namespace WinFormsApp1
         private double MaxSize = 4000000;
         private double MaxSize1 = 4000000;
         private double MinSize1 = -2000000;
-        TimeSpan ts = new TimeSpan(0,0,3);
 
         /// <summary>
         /// method that describes logic of button 'equal'
@@ -48,7 +47,7 @@ namespace WinFormsApp1
                     {
                         b = Convert.ToDouble(textBox1.Text);
                         res = a + b;
-                        if(res >= MaxSize)
+                        if (res >= MaxSize)
                         {
                             MessageBox.Show("Too big number!");
                             Clear_Click(sender, e);
@@ -92,7 +91,7 @@ namespace WinFormsApp1
                     {
                         b = Convert.ToDouble(textBox1.Text);
                         res = a * b;
-                        if(res >= MaxSize || res <= MinSize)
+                        if (res >= MaxSize || res <= MinSize)
                         {
                             MessageBox.Show("Too big number");
                             Clear_Click(sender, e);
@@ -165,16 +164,16 @@ namespace WinFormsApp1
         {
             try
             {
-                
+
                 if (Convert.ToInt32(textBox1.Text) > MaxSize1)
                 {
                     textBox1.Text = "";
                 }
-                
+
             }
             catch
             {
-                
+
             }
         }
 
@@ -506,7 +505,7 @@ namespace WinFormsApp1
             if (Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back) || (e.KeyChar == '-') ||
                 (e.KeyChar == ',') || (e.KeyChar == '='))
             {
-               
+
 
                 string s = textBox1.Text;
                 if (e.KeyChar == ',')
@@ -527,7 +526,7 @@ namespace WinFormsApp1
                     e.KeyChar = (char)Keys.None;
                     Equal_Click(sender, e);
                 }
-                
+
             }
             else { e.KeyChar = (char)Keys.None; }
             textBox1.Focus();
@@ -586,11 +585,20 @@ namespace WinFormsApp1
         private void MinValue_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)
-                || (e.KeyChar == (char)Keys.Enter))
+                || (e.KeyChar == (char)Keys.Enter) || (e.KeyChar == '-'))
             {
+                string s;
+                s = MinValue.Text;
+
                 if (e.KeyChar == (char)Keys.Enter)
                 {
                     SubmitValue_Click((object)sender, e);
+                }
+                if (e.KeyChar == '-')
+                {
+                    int i = s.Length;
+                    if (i > 0) { e.KeyChar = (char)Keys.None; }
+
                 }
 
             }
@@ -609,20 +617,25 @@ namespace WinFormsApp1
         /// <param name="e"></param>
         private void MaxValue_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)
+            if (Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)
                 || (e.KeyChar == (char)Keys.Enter))
             {
-                if(e.KeyChar == (char)Keys.Enter)
+                if (e.KeyChar == (char)Keys.Enter)
                 {
                     SubmitValue_Click((object)sender, e);
                 }
-                
+
             }
             else
             {
                 e.KeyChar = (char)Keys.None;
                 MaxValue.Focus();
             }
+        }
+
+        private void MinValue_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
